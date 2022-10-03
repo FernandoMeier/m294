@@ -1,0 +1,17 @@
+h1 {
+    color: white;
+}
+
+body {
+    background-color: #1ED760;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ol {
+    font-weight: bold;
+}
+
+#grid_thing {
+    display: grid;
+    grid-template-columns: auto;
+}
