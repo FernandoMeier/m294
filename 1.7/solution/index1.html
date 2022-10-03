@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time thingy</title>
+
+    <script>
+        const name = prompt("whats you name?")
+        let time = new Date().getHours()
+
+        if (time < 6) {
+            alert("mornin' " + name);
+        }
+        else if (time < 12) {
+            alert("g'day " + name)
+        }
+        else if (time < 18) {
+            alert("evenin' " + name)
+        }
+        else if (time < 24) {
+            alert("night " +name )
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
