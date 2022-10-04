@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <img src="/formular/meta/logo_fr.png" alt="image wasn't loaded" height="50px" width=auto>
+    <h1>Gesuch um Erteilung einer Ausnahmebewilligung für die Durchfahrt durch den Strassentunnel mit gefährlichen Gütern</h1>
+    <p>Gesuch gestellt an das Strassenverkehrs- und SChifffahrtsamt der Armee (SVSAA)</p>
+    <br>
+    <p>Angaben</p>
+    <hr>
+    <div class="grid">
+        <div id="Gesuchsteller">
+            <form action="https://www.w3schools.com/action_page.php">
+                <p>Gesuchsteller a)</p>
+                <p><label>Trp / Einheit / Betrieb:* </label>
+                <input type="text" name="trp/einheit/betr" required></p>
+
+                <p><label>Grad: </label>
+                <input type="text" name="grad" required></p>
+
+                <p><label>Name:* </label>
+                <input type="text" name="name" required></p>
+                
+                <p><label>Adresse:* </label>
+                <input type="text" name="adresse" required></p>
+                
+                <p><label>PLZ/Ort:* </label>
+                <input type="text" name="plz/ort" required></p>
+
+                <p><label>Telefon:* </label>
+                <input type="tel" name="telefon" required></p>
+
+                <p><label>Mobile: </label>
+                <input type="text" name="mobile"></p>
+                
+                <p><label>Fax:* </label>
+                <input type="text" name="fax" required></p>
+
+                <p><label>E-Mail: </label>
+                <input type="email" name="email"></p>
+            </form>
+        </div>
+
+        <div id="Bewilligungsempfänger">
+            <form action="https://www.w3schools.com/action_page.php">
+                <p>Bewilligungsempfänger</p>
+                <p id="geschlechter"><label>Geschlecht: </label><br>
+                <input type="radio" name="geschlecht" value="Gesuchsteller" id="gesuchsteller"> 
+                <label for="Gesuchsteller">Gesuchsteller</label><br>
+                <input type="radio" name="geschlecht" value="Weiblich" id="weiblich"> 
+                <label for="Absender">Absender</label><br>
+                <input type="radio" name="geschlecht" value="Sonstiges" id="sontwas">
+                <label for="Empfänger">Empfänger</label></p>
+                <p><label>Besondere Angaben: </label><br>
+                <textarea name="nachricht" id="nachricht" cols="30" rows="5"></textarea></p>
+            </form>
+        </div>
+
+        <div id="Absender">
+            <form action="https://www.w3schools.com/action_page.php">
+                <p><label>Trp / Einheit / Betrieb:* </label>
+                <input type="text" name="trp/einheit/betr" required></p>
+
+                <p><label>Grad: </label>
+                <input type="text" name="grad" required></p>
+
+                <p><label>Name:* </label>
+                <input type="text" name="name" required></p>
+                
+                <p><label>Adresse:* </label>
+                <input type="text" name="adresse" required></p>
+                
+                <p><label>PLZ/Ort:* </label>
+                <input type="text" name="plz/ort" required></p>
+                
+                <p><label>Fax:* </label>
+                <input type="text" name="fax" required></p>
+
+                <p><label>E-Mail: </label>
+                <input type="email" name="email"></p>
+            </form>
+        </div>
+
+        <div id="Empfänger">
+            <form action="https://www.w3schools.com/action_page.php">
+                <p><label>Trp / Einheit / Betrieb:* </label>
+                <input type="text" name="trp/einheit/betr" required></p>
+
+                <p><label>Grad: </label>
+                <input type="text" name="grad" required></p>
+
+                <p><label>Name:* </label>
+                <input type="text" name="name" required></p>
+                
+                <p><label>Adresse:* </label>
+                <input type="text" name="adresse" required></p>
+                
+                <p><label>PLZ/Ort:* </label>
+                <input type="text" name="plz/ort" required></p>
+                
+                <p><label>Fax:* </label>
+                <input type="text" name="fax" required></p>
+
+                <p><label>E-Mail: </label>
+                <input type="email" name="email"></p>
+            </form>
+        </div>
+    </div> 
+    <br>
+    <input type="submit" value="Versenden">
+</body>
+</html>

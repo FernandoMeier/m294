@@ -1,0 +1,29 @@
+html {
+    font-family: sans-serif;
+}
+
+p {
+    font-weight: bolder;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    max-width: 100%;
+}
+
+input {
+    background-color: lightgray;
+    border: 0;
+}
+
+#line {
+    height: 1px;
+    color: black;
+}
+
+hr {
+    size: 1px;
+    color: black;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Spoofify</title>
+    <style>
+      body {
+        background-color: #1ED760;
+        /* color: white; */
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1 {
+        color: white;
+      }
+
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .top-albums {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .top-album img {
+        width: 100%;
+      }
+
+      li:nth-child(odd) {
+        font-size: large;
+      }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const titleInput = document.querySelector("#titleInput");
+            const createButton = document.querySelector("#createButton")
+            const toDoList = document.querySelector("#toDoList")
+
+            createButton.addEventListener("click", () => {
+                const newToDoItem = document.createElement("li");
+                newToDoItem.innerText = titleInput.value;
+                toDoList.appendChild(newToDoItem);
+            })
+            //create list item
+            const the_list = document.querySelector("#list_of_Dicks")
+            the_list.append("wiener? BBC!")
+
+            // create an element
+            const h1element = document.createElement("h1");
+            h1element.id = "#head1"
+            h1element.textContent = "imma fuck yo mom";
+            document.body.append(h1element);
+
+            // Remove item
+            document.querySelector("#pp").remove()
+            // Edit content
+            document.querySelector("#head1").innerHTML = "Le Banane"
+            // Edit style
+            document.querySelector("#head1").style.color = "Red"
+            //edit color of body
+            document.body.style.background = "yellow"
+            // ^ Wichtig!!!
+
+        })
+    </script>
+  </head>
+
+  <body>
+    <h1 id="head1">Hello there</h1>
+    <h1 id="head1">Random Bullshit</h1>
+    <ol id="list_of_Dicks"></ol>
+    <p id="pp">this is shit</p>
+    <p id="pp">this is shit too</p>
+    <input type="text" id="titleInput">
+    <button id="createButton">create</button>
+    <ul id="toDoList">
+    </ul>
+  </body>
+
+</html>
